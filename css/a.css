@@ -1,6 +1,6 @@
 body{font-family:'Roboto',sans-serif;background-color:#efe7ff}
 body,input,select,option,.btn{font-size:20px !important}
-#a{background:url('img/f.jpg') 50% 50% no-repeat;background-size:cover;color:#fff}
+#a{background:url('../img/f.jpg') 50% 50% no-repeat;background-size:cover;color:#fff}
 #b{background-color:rgba(42,39,48,0.5)}
 .footer{padding:50px 0 50px;margin-top:100px;color:#99979c;text-align:left;
     background-color:#2a2730}
