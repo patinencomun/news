@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exemple de pàgina de notícies</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="css/a.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/j.js"></script>
+</head>
+<body>
+
+
+<div id="a" class="jumbotron text-center"><h1>Títol descriptiu</h1>
+    <br>
+    <div id="b" class="alert">
+    <p>Descripció curta important. Descripció curta important. Descripció curta important.</p>
+    <p>Més descripció curta important. Més descripció curta important. Més descripció curta important. </p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4"><br>
+            <p class="g"><span class="glyphicon glyphicon-stats"></span></p>
+            <p id="nsocios">134 Coses</p>
+            <p id="nclubes">3432 Més coses</p>       
+        </div>
+        <div class="col-sm-4"><br>
+            <p class="g"><span class="glyphicon glyphicon-heart"></span></p>
+            <p>Per donar idées...</p>
+            <p>Selector de Comunitat Autònoma</p>
+            <button type="button" class="btn-lg btn-info" data-toggle="modal" data-target="#info"> información </button>
+        </div>
+        <div class="col-sm-4"><br>
+            <p class="g"><span class="glyphicon glyphicon-user"></span></p>
+            <p><input type="text" class="form-control" placeholder="usuari" required></p>
+            <p><input type="password" class="form-control" placeholder="password" required></p>
+            <button type="button" class="btn-lg btn-info"> entrar </button>
+        </div>
+    </div>    
+    <div class="row">
+        <div class="col-sm-4"><br>
+            <h2>Les notícies:</h2>
+            <p>Aixó és cosa vostre...</p>
+        </div>
+    </div>
+</div>
+
+<div id="info" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Selecciona tu Comunidad Autónoma</h4>
+      </div>
+      <div class="modal-body">
+          <select class="form-control" id="comunidades">
+              <option selected value="0">Selecciona...</option>
+              <option value='andalucia'>Andalucía</option><option value='aragon'>Aragón</option><option value='principado-de-asturias'>Principado de Asturias</option><option value='illes-balears'>Illes Balears</option><option value='canarias'>Canarias</option><option value='cantabria'>Cantabria</option><option value='castilla-y-leon'>Castilla y León</option><option value='castilla-la-mancha'>Castilla - La Mancha</option><option value='cataluna'>Cataluña</option><option value='comunitat-valenciana'>Comunitat Valenciana</option><option value='extremadura'>Extremadura</option><option value='galicia'>Galicia</option><option value='comunidad-de-madrid'>Comunidad de Madrid </option><option value='region-de-murcia'>Región de Murcia</option><option value='comunidad-foral-de-navarra'>Comunidad Foral de Navarra</option><option value='pais-vasco'>País Vasco</option><option value='la-rioja'>La Rioja</option><option value='ceuta'>Ceuta</option><option value='melilla'>Melilla</option>          </select>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn-lg btn-info" id="verinfo"> ver información </button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<script>
+$(function(){
+    $("#verinfo").click(function() {
+        var v=$("#comunidades").val();
+        if (v!=0) window.location = "comunidad/"+$("#comunidades").val();
+        else alert('Selecciona una comunidad');
+    });
+});
+</script>
+<footer class="footer"> 
+    <div class="container"> 
+        <ul class="footer-links"> 
+            <li>Facebook</li> 
+            <li>About</li> 
+        </ul> 
+        <p>Developed by Miguel Urbina
+        </p> 
+    </div> 
+</footer></body></html>
