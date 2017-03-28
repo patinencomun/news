@@ -62,7 +62,7 @@
       <div class="modal-body">
           <select class="form-control" id="comunidades">
               <option selected value="0">Selecciona...</option>
-              <option value='andalucia'>Andalucía</option><option value='aragon'>Aragón</option><option value='principado-de-asturias'>Principado de Asturias</option><option value='illes-balears'>Illes Balears</option><option value='canarias'>Canarias</option><option value='cantabria'>Cantabria</option><option value='castilla-y-leon'>Castilla y León</option><option value='castilla-la-mancha'>Castilla - La Mancha</option><option value='cataluna'>Cataluña</option><option value='comunitat-valenciana'>Comunitat Valenciana</option><option value='extremadura'>Extremadura</option><option value='galicia'>Galicia</option><option value='comunidad-de-madrid'>Comunidad de Madrid </option><option value='region-de-murcia'>Región de Murcia</option><option value='comunidad-foral-de-navarra'>Comunidad Foral de Navarra</option><option value='pais-vasco'>País Vasco</option><option value='la-rioja'>La Rioja</option><option value='ceuta'>Ceuta</option><option value='melilla'>Melilla</option>          </select>
+          </select>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn-lg btn-info" id="verinfo"> ver información </button>
@@ -71,15 +71,6 @@
 
   </div>
 </div>
-<script>
-$(function(){
-    $("#verinfo").click(function() {
-        var v=$("#comunidades").val();
-        if (v!=0) window.location = "comunidad/"+$("#comunidades").val();
-        else alert('Selecciona una comunidad');
-    });
-});
-</script>
 <footer class="footer"> 
     <div class="container"> 
         <ul class="footer-links"> 
