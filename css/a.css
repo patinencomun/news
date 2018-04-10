@@ -15,5 +15,5 @@ body,input,select,option,.btn{font-size:20px !important}
 @media screen and (min-width: 768px){
     #b{background-color:rgba(42,39,48,0.8)}    
     #contenido{padding-right:336px}
-    #publicidad{position:absolute;background-color:white;right:0px;width:336px}
+    #publicidad{position:absolute;background-color:white;right:0px;width:336px;display:block}
 }
