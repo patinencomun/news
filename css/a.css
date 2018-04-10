@@ -9,6 +9,8 @@ body,input,select,option,.btn{font-size:20px !important}
 .footer-links li{display:inline-block}
 .g{font-size:50px;padding-top:15px}
 .form-control{height:auto !important}
+#contenido{padding-right:336}
+#publicidad{position:absolute;background-color:white;right: 0px;width:336px}
 
 @media screen and (min-width: 768px){
 #b{background-color:rgba(42,39,48,0.8)}
